@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id = "@+id/Clock"
+        android:title="Dashboard"
+        android:icon="@drawable/future"
+        />
+    <item
+        android:id = "@+id/Tower"
+        android:title="Activity"
+        android:icon="@drawable/tower"
+        />
+    <item
+        android:id = "@+id/Person"
+        android:title="Profile"
+        android:icon="@drawable/user"
+        />
+
+</menu>

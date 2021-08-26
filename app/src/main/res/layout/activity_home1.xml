@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/user1"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="10dp"
+        android:id = "@+id/img"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:layout_margin="25dp"
+        android:textColor="@color/black"
+        android:id="@+id/tvPerson"
+        android:layout_toEndOf="@id/img"
+        android:background="@drawable/home"
+        android:hint="Please Enter a Name" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/calendar1"
+        android:layout_toStartOf="@id/tvDate"
+        android:layout_below="@id/tvPerson"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="10dp"
+        android:id = "@+id/img1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="20sp"
+        android:layout_margin="25dp"
+        android:textColor="@color/black"
+        android:id="@+id/tvDate"
+        android:layout_toEndOf="@id/img"
+
+        android:layout_below="@id/tvPerson"
+        android:background="@drawable/home"
+        android:hint="Please Select a Date" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:orientation="horizontal"
+        android:id = "@+id/linear"
+
+        android:weightSum="3"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/clock5"
+            android:layout_weight="1"
+            android:id = "@+id/Watch"
+            android:layout_marginTop="35dp"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvStartDate"
+            android:layout_weight="1"
+            android:background="@drawable/home"
+            android:hint="Start Time" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_margin="15dp"
+
+            android:textColor="@color/black"
+            android:id="@+id/tvEndDate"
+            android:layout_weight="1"
+            android:background="@drawable/home"
+            android:hint="End Time" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/comment"
+        android:layout_below="@id/linear"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="10dp"
+        android:id = "@+id/img4"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint = "Comment"
+        android:layout_below="@id/linear"
+        android:layout_margin="25dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:background="@drawable/home"
+        android:layout_toEndOf="@id/img4"
+        android:id = "@+id/tvComment"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvComment"
+        android:layout_margin="25dp"
+        android:text = "Set Timer"
+        android:textSize="22sp"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:id="@+id/setTime"
+        />
+
+</RelativeLayout>

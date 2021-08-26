@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AndroidFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:id="@+id/tvQuote"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        android:text="Concentration on small
+step will increase your chance of success!"
+        android:textStyle="normal|italic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="30dp"
+
+        android:textSize = "18sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:id="@+id/tvCatchName"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCatchName"
+        android:textSize = "18sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+
+        android:id = "@+id/tvCatchName1"
+        android:layout_marginStart="30dp"/>
+
+
+
+</RelativeLayout>

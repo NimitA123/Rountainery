@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Hello!"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="normal"
+        android:id = "@+id/tvText"
+        />
+
+    <TextView
+        android:id="@+id/tvText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="3dp"
+        android:text="I am Routinery"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvText2"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:text="@string/Big_Text"
+        android:textColor="#808080"
+        android:textSize="25sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/tvText4"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rectangle"
+        android:text="Hello"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:text="Already have an account? Sign in"
+        android:textColor="#708090"
+        android:textSize="23sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>
